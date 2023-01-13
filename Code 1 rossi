@@ -1,0 +1,11 @@
+import pandas as pd 
+s1= pd.Series ([10, 20, 30], index=['a','b','c']) 
+s1= pd.Series ([25], index=['a','b'])
+print ("The Addition of two series object is:")
+print (s1+s2) 
+print ("The subtraction of two series object is:")
+print (s1-s2)
+print ("The Multiplication of two series object is:")
+print (s1*s2)
+print ("The Division of two series object is:")
+print (s1/s2)
