@@ -1,0 +1,62 @@
+SET 5 COPY THIS  
+
+   
+
+ create database CHADMODE;  
+
+ use CHADMODE;  
+
+   
+
+ create table Furniture  (  
+
+         fcode int(10),  
+
+         name varchar(200),  
+
+         price int(10),  
+
+         manufdate date,  
+
+         wcode varchar(10)  
+
+ );  
+
+   
+
+ insert into Furniture values(10023, "Cofee Table", 4000, Curdate(), 'W03');  
+
+ insert into Furniture values(10001, "Dining table", 20500, Curdate(), 'W01');  
+
+ insert into Furniture values(10012, "Sofa", 35000, Curdate(), 'W02');  
+
+ insert into Furniture values(10024, "Chair", 2500, Curdate(), 'W03');  
+
+ insert into Furniture values(10090, "Cabinet", 18000, Curdate(), 'W02');  
+
+   
+
+ select fcode, name, price from Furniture where price < 5000;  
+
+ select name, price from Furniture where name like "%table%";  
+
+ select fcode, name from Furniture ORDER By fcode DESC;  
+
+ select * from Furniture where price <= 20000 && price >= 6800;  
+
+ select count(DISTINCT price) from Furniture;  
+
+ select fcode, name, price from Furniture where wcode = 'W02';  
+
+   
+
+ ----------------------------Credits : YOUR MOM LOL--------------------------------------
+
+
+
+
+
+
+
+
+
